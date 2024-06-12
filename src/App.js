@@ -45,7 +45,7 @@ function App() {
   };
 
   return (
-    <div className="bg-gradient-to-r from-indigo-500 to-cyan-500 overflow-hidden  ">
+    <div className="bg-gradient-to-r from-indigo-500 to-sky-500 dark:bg-gradient-to-r dark:from-sky-700 dark:to-sky-900  overflow-hidden  ">
       <div className="h-screen overflow-auto flex flex-col items-center">
         <Header />
         <div className="xl:w-10/12 md:w-full w-full flex justify-center">

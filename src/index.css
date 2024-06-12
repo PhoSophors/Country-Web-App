@@ -28,9 +28,13 @@ code {
   background-color: transparent;
   border-radius: 20px;
 }
-:where(.css-dev-only-do-not-override-zg0ahe)[class^="ant-modal"] [class^="ant-modal"], :where(.css-dev-only-do-not-override-zg0ahe)[class*=" ant-modal"] [class^="ant-modal"], :where(.css-dev-only-do-not-override-zg0ahe)[class^="ant-modal"] [class*=" ant-modal"], :where(.css-dev-only-do-not-override-zg0ahe)[class*=" ant-modal"] [class*=" ant-modal"] {
+.css-dev-only-do-not-override-zg0ahe[class^="ant-modal"] [class^="ant-modal"],
+.css-dev-only-do-not-override-zg0ahe[class*=" ant-modal"] [class^="ant-modal"],
+.css-dev-only-do-not-override-zg0ahe[class^="ant-modal"] [class*=" ant-modal"],
+.css-dev-only-do-not-override-zg0ahe[class*=" ant-modal"] [class*=" ant-modal"] {
   box-sizing: border-box;
   border-radius: 20px;
+  border: none;
 }
 
 /* input */
@@ -45,7 +49,8 @@ code {
 }
 
 /* selection */
-:where(.css-dev-only-do-not-override-zg0ahe).ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+
+.css-dev-only-do-not-override-zg0ahe.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
     width: 100%;
     height: 50px;
     margin-top: -9px;
@@ -55,7 +60,6 @@ code {
     border-bottom-right-radius: 15px;
     border: none;
 }
-
 /* spin */
 .white-spinner .ant-spin-dot-item {
   background-color: white !important;
