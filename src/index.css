@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Merriweather:wght@300&family=Noto+Sans+Khmer:wght@100;400&family=Poppins:wght@100&family=Satisfy&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +11,59 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.name-app {
+  font-family: 'Agustina', sans-serif;
+}
+
+/* modal */
+.ant-modal .ant-modal-content {
+  background-color: transparent;
+  border-radius: 20px;
+}
+:where(.css-dev-only-do-not-override-zg0ahe)[class^="ant-modal"] [class^="ant-modal"], :where(.css-dev-only-do-not-override-zg0ahe)[class*=" ant-modal"] [class^="ant-modal"], :where(.css-dev-only-do-not-override-zg0ahe)[class^="ant-modal"] [class*=" ant-modal"], :where(.css-dev-only-do-not-override-zg0ahe)[class*=" ant-modal"] [class*=" ant-modal"] {
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+/* input */
+.ant-input-outlined {
+  height: 50px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: none;
+  border-right: 1px solid gray;
+}
+
+/* selection */
+:where(.css-dev-only-do-not-override-zg0ahe).ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    width: 100%;
+    height: 50px;
+    margin-top: -9px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+}
+
+/* spin */
+.white-spinner .ant-spin-dot-item {
+  background-color: white !important;
+}
+
+/* set hero-img hidden want screen 1044 */
+@media (max-width: 1044px) {
+  .hero-img {
+    display: none;
+  }
 }
