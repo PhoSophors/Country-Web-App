@@ -34,8 +34,8 @@ const CountryCard = ({ countries }) => {
   );
 
   return (
-    <div className="p-5 h-screen" style={{ overflow: "auto", height: "100%" }}>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div className="p-2 md:p-5 xl:p-5 h-screen" style={{ overflow: "auto", height: "100%" }}>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:gap-4 md:gap-4 gap-2">
         {paginatedCountries.map((country, index) => (
           <Card
             className="backdrop-blur-sm bg-white/30"

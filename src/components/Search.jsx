@@ -20,17 +20,18 @@ const Search = ({ onSearch, onSort }) => {
   };
 
   return (
-    <div className=" justify-between items-center">
+    <div className="flex items-center space-x-1">
       <Input
+        className="xl:w-80 md:w-80 w-auto"
         placeholder="Search by country name"
         value={searchTerm}
         onChange={handleSearchChange}
-        style={{ width: 300 }}
       />
       <Select
+        className="xl:w-32 md:w-auto w-auto"
         value={sortOrder}
         onChange={handleSortChange}
-        style={{ width: 150 }}
+        style={{ height: "50px", borderRadius: "15px" }}
       >
         <Option value="asc">Ascending</Option>
         <Option value="desc">Descending</Option>

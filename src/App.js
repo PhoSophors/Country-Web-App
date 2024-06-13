@@ -51,11 +51,11 @@ function App() {
         <div className="xl:w-10/12 md:w-full w-full flex justify-center">
           <div className="grid text-center mx-auto flex xl:mt-20 max-w-screen-xl px-0 py-2 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12">
             <div className="mr-auto md:mt-10 xl:mt-0 lg:p-5 text-center lg:col-span-7">
-              <div className="text-center">
-                <h1 className="text-3xl md:text-4xl xl:text-5xl  font-bold text-gray-900">
+              <div className="text-center  mx-5 ">
+                <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold text-slate-100 ">
                   A Comprehensive Guide to the World's Nations
                 </h1>
-                <span className="text-xl text-gray-800 font-semibold">
+                <span className="text-xl text-slate-300 font-semibold dark:text-slate-400">
                   Search by country name, sort by country name, and browse by
                   page.
                 </span>
