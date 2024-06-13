@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState, useEffect } from "react";
 import CountryCard from "./components/CountryCard";
 import Search from "./components/Search";
@@ -45,14 +44,14 @@ function App() {
   };
 
   return (
-    <div className="bg-gradient-to-r from-indigo-500 to-sky-500 dark:bg-gradient-to-r dark:from-sky-700 dark:to-sky-900  overflow-hidden  ">
+    <div className="bg-gradient-to-r from-indigo-500 to-sky-500 dark:bg-gradient-to-r dark:from-sky-700 dark:to-sky-900 overflow-hidden">
       <div className="h-screen overflow-auto flex flex-col items-center">
         <Header />
         <div className="xl:w-10/12 md:w-full w-full flex justify-center">
           <div className="grid text-center mx-auto flex xl:mt-20 max-w-screen-xl px-0 py-2 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12">
             <div className="mr-auto md:mt-10 xl:mt-0 lg:p-5 text-center lg:col-span-7">
-              <div className="text-center  mx-5 ">
-                <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-amber-300 to-slate-100 ">
+              <div className="text-center mx-5">
+                <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-amber-300 to-slate-100">
                   A Comprehensive Guide to the World's Nations
                 </h1>
                 <span className="text-xl text-slate-300 font-semibold dark:text-slate-400">
@@ -74,7 +73,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="xl:w-10/12 md:w-full w-full flex justify-center mt-5 ">
+        <div className="xl:w-10/12 md:w-full w-full flex justify-center mt-5">
           {isLoading ? (
             <div>
               <Spin className="white-spinner" />
@@ -82,7 +81,9 @@ function App() {
           ) : filteredCountries.length > 0 ? (
             <CountryCard countries={filteredCountries} sortOrder={sortOrder} />
           ) : (
-            <div className="text-white text-2xl font-semibold uppercase">No countries found..!</div>
+            <div className="text-white text-2xl font-semibold uppercase">
+              No countries found..!
+            </div>
           )}
         </div>
         <Footer />
