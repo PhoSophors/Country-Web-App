@@ -52,7 +52,7 @@ function App() {
           <div className="grid text-center mx-auto flex xl:mt-20 max-w-screen-xl px-0 py-2 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12">
             <div className="mr-auto md:mt-10 xl:mt-0 lg:p-5 text-center lg:col-span-7">
               <div className="text-center  mx-5 ">
-                <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold text-slate-100 ">
+                <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-amber-300 to-slate-100 ">
                   A Comprehensive Guide to the World's Nations
                 </h1>
                 <span className="text-xl text-slate-300 font-semibold dark:text-slate-400">
@@ -79,8 +79,10 @@ function App() {
             <div>
               <Spin className="white-spinner" />
             </div>
-          ) : (
+          ) : filteredCountries.length > 0 ? (
             <CountryCard countries={filteredCountries} sortOrder={sortOrder} />
+          ) : (
+            <div className="text-white text-2xl font-semibold uppercase">No countries found..!</div>
           )}
         </div>
         <Footer />

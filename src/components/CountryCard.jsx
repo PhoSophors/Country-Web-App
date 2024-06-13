@@ -34,7 +34,10 @@ const CountryCard = ({ countries }) => {
   );
 
   return (
-    <div className="p-2 md:p-5 xl:p-5 h-screen" style={{ overflow: "auto", height: "100%" }}>
+    <div
+      className="p-2 md:p-5 xl:p-5 h-screen"
+      style={{ overflow: "auto", height: "100%" }}
+    >
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:gap-4 md:gap-4 gap-2">
         {paginatedCountries.map((country, index) => (
           <Card
@@ -76,6 +79,7 @@ const CountryCard = ({ countries }) => {
       </div>
       <div className="mt-5 flex justify-center">
         <Pagination
+          className="text-white bg-white/30 backdrop-blur-sm p-2 rounded-lg"
           current={currentPage}
           pageSize={pageSize}
           total={countries.length}
